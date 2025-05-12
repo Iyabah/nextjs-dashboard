@@ -3,7 +3,7 @@ import { Card } from '@/app/dashboard/cards';
 import  RevenueChart  from '@/app/dashboard/revenue-chart';
 import LatestInvoices from '@/app/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
-import { Suspense } from 'react';
+import { Fragment, Suspense } from 'react';
 import CardWrapper from '@/app/dashboard/cards';
 
 import { RevenueChartSkeleton,LatestInvoicesSkeleton,  CardsSkeleton,
@@ -14,7 +14,7 @@ export default async function Page() {
   
   return (
     
-    <main>
+    <Fragment>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>
@@ -33,6 +33,6 @@ export default async function Page() {
      </Suspense>
       
      </div>
-    </main>
+    </Fragment>
   );
 }
