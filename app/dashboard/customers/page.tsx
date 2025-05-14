@@ -1,4 +1,6 @@
+
 import CustomersTable from "@/app/ui/customers/table";
+import { Metadata } from "next";
 export default function page() {
     return (
         <>
@@ -6,4 +8,8 @@ export default function page() {
         <CustomersTable customers={[]} />
         </>
     )
+};
+
+export const metadata: Metadata = {
+    title: 'Customers',
 }

@@ -5,6 +5,12 @@ import LatestInvoices from '@/app/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { Fragment, Suspense } from 'react';
 import CardWrapper from '@/app/dashboard/cards';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashbaord',
+
+};
 
 import { RevenueChartSkeleton,LatestInvoicesSkeleton,  CardsSkeleton,
 } from '@/app/ui/skeletons';
